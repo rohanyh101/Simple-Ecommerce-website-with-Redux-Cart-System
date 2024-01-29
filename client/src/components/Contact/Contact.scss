@@ -1,0 +1,94 @@
+.contact {
+    background-color: olivedrab;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            border-radius: 0 5px 5px 0;
+            border: none;
+            padding: 10px;
+            color: white;
+            background: #333;
+            cursor: pointer;
+        }
+
+        // .iconWrapper1 {
+        //     // display: flex;
+        //     margin-left: 100px;
+
+            .iconWrapper2 {
+                // padding: 25px;
+                margin-left: 150px;
+                position: relative;
+                display: flex;
+                align-items: center;
+    
+                .icons {
+                    right: 0px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+        
+                    .pinterest {
+                        &:hover {
+                            color: #f11133;
+                        }
+                    }
+        
+                    .facebook {
+                        &:hover {
+                            color: #1877F2;
+                        }
+                    }
+        
+                    .twitter {
+                        &:hover {
+                            color: #0699f5;
+                        }
+                    }
+        
+                    .instagram {
+                        &:hover {
+                            color: #cb1df2;
+                        }
+                    }
+        
+                    .google {
+                        &:hover {
+                            color: linear-gradient(#F9CE34, #EE2A7B, #6228D7);
+                        }
+                    }
+        
+                    * {
+                        cursor: pointer;
+        
+                        &:hover {
+                            width: 35px;
+                            height: 35px;
+                            transition: 150ms ease;
+                        }
+                    }
+                }
+            }
+        // }
+    }
+}

@@ -1,0 +1,55 @@
+.products {
+    padding: 30px 50px;
+    display: flex;
+
+    .left {
+        flex: 1;
+        
+        // means after 50px the left div will gona stay there...
+        position: sticky;
+        // after giving div as sticky, we must need to assign height to it, after which it stay there..
+        height: 100%;
+        top: 50px;
+
+        // display: flex;
+        // flex-direction: column;
+        // gap: 30px;
+
+        .filterItem {
+            margin-bottom: 30px;
+
+            .inputItemRange {
+                display: flex;
+                align-items: center;
+            }
+
+            h2 {
+                font-weight: 400;
+                margin-bottom: 17px;
+            }
+
+            .inputItem {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+
+                label {
+                    margin-left: 10px;
+                    font-size: 16px;
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 3;
+
+        .catImg {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}
